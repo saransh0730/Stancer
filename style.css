@@ -1,0 +1,444 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSSS Variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -49px;
+}
+
+/* Navigation bar: Logo and Image */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 34px 45px;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+#navbar ul li {
+    /* color: black; */
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 5px 5px;
+    padding: 5px 45px;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 58, 57);
+    opacity: 0.8;
+    /* background-color: white; */
+    transform: translate(2px, 3px);
+    /* font-size: large; */
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+}
+
+#home::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(../useit.jpg) no-repeat center center/cover;
+}
+
+section {
+    margin: -70px 20px;
+    padding: 20px 20px;
+}
+
+#home p {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#home h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* Collection Section */
+#collection{
+    margin: 34px;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#collection .box{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 15px;
+    background-color: rgb(212, 188, 198);
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#collection .box img{
+   height: 200px;
+   margin: auto;
+   padding: 20px 20px;
+   display: block;
+   transition: all 0.4s ease-in-out;
+
+   /* box-shadow: 3px 3px 20px 2px rgb(36, 39, 35); */
+}
+#collection .box:hover{
+    background-color: white;
+}
+#collection .box img:hover{
+    box-shadow: 3px 3px 20px 2px rgb(36, 39, 35);
+    cursor: pointer;
+}
+#collection .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Sign Up section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../womenbg.jpg) no-repeat center center/cover;
+}
+#contacct-box form{
+    width: 40%;
+
+}
+#contacct-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+/* Utility Class */
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.h-primary {
+    font-size: 6.2rem;
+    padding: 145px 60px;
+    margin: 46px 225px;
+    height: 81px;
+    width: 1000px;
+}
+.help{
+    display: inline-block;
+    position: fixed;
+    right: -3px;
+    bottom: 50px;
+}
+.help button{
+    background-color:rgb(21, 56, 51);
+    width: 210px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 20px;
+    color: white;
+    border: none;
+    /* border: 2px solid black; */
+    transition: all 0.4s ease-in-out;
+
+}
+.help button:hover{
+    cursor: pointer;
+    /* border: 2px solid black; */
+    background-color: rgb(12, 207, 198);
+    color: rgb(0, 0, 0);
+}
+.help1{
+    display: inline-block;
+    position: fixed;
+    right: -3px;
+    bottom: 10px;
+}
+.help1 button{
+    background-color:rgb(255, 255, 255);
+    width: 210px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    transition: all 0.4s ease-in-out;
+
+}
+.help1 button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(12, 207, 198);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 18px;
+    position: relative;
+    bottom: -400px;
+    width: 100%;
+    right: 40px;
+    z-index: -1;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Charity program */
+#client-section{
+    margin: 40px 20px;
+    padding: 30px 20px;
+    /* position: relative; */
+    height: 550px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.client-item{
+    padding: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../kids.jpg);
+    width: 95%;
+    height: 1000px;
+    z-index: -1;
+    opacity: 0.5;
+    margin: auto;
+    padding: 9px;
+    height: 960px;
+}
+#client-section p{
+    font-size: 35px;
+    /* height: 20px; */
+    text-align: center;
+    padding: 20px;
+    margin: 0px 240px;
+}
+#clients img{
+    height: 300px;
+    box-shadow: 4px 5px 20px 8px rgb(36, 39, 35);
+    /* TO TURN PHOTOS TO BnW */
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+}
+.center{
+    text-align: center;
+}
+.chalbeycollection{
+    font-size: 5.0rem;
+    padding: 86px 40px;
+    margin: 80px 225px;
+    height: 20px;
+    width: 1000px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.chalbe {
+    font-size: 5.2rem;
+    padding: 50px 36px;
+    margin: 46px 225px;
+    height: 80px;
+    font-family: 'Raleway', sans-serif;
+    width: 1000px;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+.btn {
+    padding: 6px 25px;
+    border-radius: 30px;
+    /* border: 3px solid rgb(255, 255, 255); */
+    border: 0px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(196, 115, 23);
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    margin: 0px 20px;
+    font-family: sans-serif;
+    /* opacity: 0.8; */
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(196, 115, 23);
+    border: 0px;
+    /* opacity: 0.8; */
+    /* transform: translate(2px, 3px); */
+    font-size: large;
+}
+
+.box button{
+    margin: 25px 186px;
+    padding: 11px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.box button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Login */
+#login p{
+    font-size: larger;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: rgb(255, 255, 255);
+    transition: all 0.1s ease-in-out;
+
+}
+#login p a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#login p a:hover{
+    color: rgb(144, 157, 214);
+    /* font-size: larger; */
+
+}
+#login{
+    padding: 10px;
+}
+
+/* Signup page */
+
+.creds{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    display: flex;
+    /* width: 00px; */
+    flex-direction: column;
+    /* border: 2px solid rgb(84, 82, 223); */
+    height: 370px;
+    border-radius: 15px;
+    width: 21.25%;
+    margin: 153px 585px;
+    padding: 42px 33px;
+    z-index: 10;
+    background-color: white;
+}
+.creds h1{
+    text-align: center;
+    margin: 10px;
+    /* padding: -80px; */
+    /* justify-content: center; */
+}
+.creds p{
+    text-align: center;
+    font-size: medium;
+}
+.creds input{
+    font-size: medium;
+    color: black;
+    margin: 12px 10px;
+    padding: 10px 10px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#signup{
+    /* border-radius: 10px; */
+    width: 324px;
+    color: black;
+    margin: 15px 10px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: medium;
+    background-color: rgb(84, 82, 223);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+#signup:hover{
+    background-color: rgb(54, 54, 182);
+}
+#signupwaala{
+    margin: -3px;
+}
+#signupwaala a{
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+#signupwaala a:hover{
+    color: rgb(111, 111, 180);
+}
+
